@@ -1,7 +1,7 @@
 {
   "name": "US Citizenship Flashcards",
   "short_name": "Flashcards",
-  "start_url": "./index.html",
+  "start_url": ".",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#1976d2",
