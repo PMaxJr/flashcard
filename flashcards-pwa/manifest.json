@@ -1,0 +1,20 @@
+{
+  "name": "US Citizenship Flashcards",
+  "short_name": "Flashcards",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1976d2",
+  "icons": [
+    {
+      "src": "icons/flash128.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "icons/flash512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

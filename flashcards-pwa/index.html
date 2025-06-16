@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>US Citizenship Flashcards</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <button id="theme-toggle">🌙 Dark Mode</button>
+
+    <h2 id="question">Loading...</h2>
+    <p id="answer"></p>
+    <div id="card" class="flashcard">Click to flip</div>
+    <div class="buttons">
+      <button id="prev-btn">Previous</button>
+      <button id="next-btn">Next</button>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("sw.js")
+          .then(() => console.log("✅ Service Worker registered"))
+          .catch((err) =>
+            console.log("❌ Service Worker registration failed", err)
+          );
+      }
+    </script>
+  </body>
+</html>
